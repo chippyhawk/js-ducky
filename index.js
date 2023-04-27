@@ -1,6 +1,12 @@
-// Import stylesheets
-import './style.css';
+import React from "react";
+import ReactDOM from "react-dom";
 
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1></h1>`;
+import App from "./App";
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  rootElement
+);
